@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 10px;
+            border: 2px solid black;
+        }
+        body{
+            border: 2px solid red;
+            padding: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <button id="btn1">Button1</button>
+        <button id="btn2">Button2</button>
+    </div>
+
+    <script>
+        document.getElementById("div1").addEventListener("click",(event)=>{
+            event.stopPropagation()
+            console.log("Div is pressed");           
+        })
+
+        document.getElementById("btn1").addEventListener("click",(e)=>{
+            e.stopPropagation()
+            console.log("Button1 is pressed");           
+        })   
+        
+        document.getElementById("btn2").addEventListener("click",(a)=>{
+            a.stopPropagation()
+            console.log("Button2 is pressed");           
+        })
+
+        document.body.addEventListener("click",(f)=>{
+            f.stopPropagation()
+            console.log("Body is pressed");           
+        })
+ 
+       
+        
+    </script>
+</body>
+</html>

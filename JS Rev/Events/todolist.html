@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px dashed magenta;
+            width: 250px;
+            padding: 20px;
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <div><input type="text" id="input" placeholder="write">
+    <button id="btn">Add</button>
+     
+
+    <ul id="ul"></ul>
+    </div>
+
+
+    <script>
+        let input=document.getElementById("input");
+        let btn=document.getElementById("btn");
+        let ul=document.getElementById("ul")
+        btn.addEventListener("click",()=>{
+           let li=document.createElement("li")
+           li.innerText=input.value;
+
+           let deleteButton = document.createElement("button")
+           deleteButton.innerText="Delete"
+           
+           li.appendChild(deleteButton);
+
+           deleteButton.addEventListener("click",()=>{
+            li.remove();
+           })
+
+
+           ul.addEventListener("click",(e)=>{
+            if(e.target.innerText == "delete"){
+                e.target.parentElement.remove()
+            }
+            else if(e.target.innerText == "edit"){
+                input.value= e.target.previousElementSibling.previousElementSibling.innerText
+                e.target.innerText= "update"
+            }
+            else if(e.target.innerText == "update"){
+                e.target=previousElementSibling.previousElementSibling.innerText = input.value;
+                e.target.innerText="edit"
+                input.value=""
+            }
+           })
+           
+           ul.append(li);
+           input.value="";
+          
+        })
+
+
+    </script>
+</body>
+</html>

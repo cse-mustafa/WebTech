@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,ul{
+            border: 5px solid black;
+            padding: 20px;
+        }
+
+        table td{
+            border: 5px solid magenta;
+            padding: 10px;  
+        }
+        ul li{
+            border: 5px solid magenta;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <tr id="tr1">
+            <td id="td1">red</td>
+            <td id="td2">blue</td>
+            <td id="td3">green</td>
+        </tr>
+    </table>
+
+    <ul id="ul1" type="none">
+        <li>red</li>
+        <li>green</li>
+        <li>blue</li>
+        <li>purple</li>
+        <li>orange</li>
+    </ul>
+
+    <script>
+        // let td1=document.getElementById("td1");
+        // let td2=document.getElementById("td2");
+        // let td3=document.getElementById("td3");
+
+        // td1.addEventListener("click",()=>{
+        //     td1.style.backgroundColor="red";
+        // })
+        // td2.addEventListener("click",()=>{
+        //     td2.style.backgroundColor="blue";
+        // })
+        // td3.addEventListener("click",()=>{
+        //     td3.style.backgroundColor="green";
+        // })
+
+        let tr1=document.getElementById("tr1");
+        tr1.addEventListener("click",(e)=>{
+            console.log(e.target);
+            e.target.style.backgroundColor= e.target.innerText;
+            
+
+        })
+
+        let ul1=document.getElementById("ul1");
+        ul1.addEventListener("click",(e)=>{
+            e.target.style.backgroundColor = e.target.innerText;
+        })
+    </script>
+</body>
+</html>

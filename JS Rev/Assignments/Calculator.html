@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="input">
+        <div class="buttons">
+            <button value="7" onclick="display(7)">7</button>
+            <button value="8" onclick="display(8)">8</button>
+            <button value="9" onclick="display(9)">9</button>
+            <button class="operator" value="+" onclick="display('+')">+</button>
+            <button value="4" onclick="display(4)">4</button>
+            <button value="5" onclick="display(5)">5</button>
+            <button value="6" onclick="display(6)">6</button>
+            <button class="operator" value="-" onclick="display('-')">-</button>
+            <button value="1" onclick="display(1)">1</button>
+            <button value="2" onclick="display(2)">2</button>
+            <button value="3" onclick="display(3)">3</button>
+            <button class="operator" value="*" onclick="display('*')">*</button>
+            <button class="clear" value="C" onclick="asd()">C</button>
+            <button value="0" onclick="display(0)">0</button>
+            <button class="equal" value="=" onclick="result()">=</button>
+            <button class="operator" value="/" onclick="display('/')">/</button>
+            <button onclick="back()">Back</button>
+        </div>
+    </div>
+
+    <script>
+          function display(value){
+            document.getElementById("input").value+=value;   //taking values one by one +=
+          }
+
+          function result(){
+           let rel= document.getElementById("input").value;   //taking value and storing in variable
+           let result = eval(rel);                              //passing the variable to "evaluate" function which is built-in,evaluates automatically
+           document.getElementById("input").value = result;     //passing the result back to input.value
+          }
+
+          function asd(){
+            document.getElementById("input").value = " ";      //clearing
+          }
+
+          function back(){
+
+            
+            let z=document.getElementById("input").value;      //taking input.value and storing in variable  "its a string"
+            document.getElementById("input").value = z.slice(0,-1);   //  using string slice and negative indexing
+
+
+        
+          }
+    </script>
+</body>
+</html>

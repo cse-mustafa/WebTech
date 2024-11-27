@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .show{
+            display: inline-block;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button> <br>
+    <p id="para1" class="show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dicta saepe tempore nobis odit voluptatibus natus cum vero aliquid veritatis?</p>
+<script>
+      let hide=document.getElementById("hide");
+      let show=document.getElementById("show");
+      let para1=document.getElementById("para1");
+
+      hide.addEventListener("click",()=>{
+        para1.classList.add("hide")
+        para1.classList.remove("show")
+      })
+
+      show.addEventListener("click",()=>{
+        para1.classList.add("show")
+        para1.classList.remove("hide")
+      })
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

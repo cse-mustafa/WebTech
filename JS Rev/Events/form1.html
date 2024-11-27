@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+      <fieldset>
+        <legend>Info</legend>
+        <input type="text" name="username" placeholder="username" id="username"><br><br>
+        <p id="err1"></p>
+        <input type="text" name="password" placeholder="password" id="password"><br><br>
+        <p id="err2"></p>
+        <button>Submit</button>
+       </fieldset>
+    </form>
+
+    <script>
+        document.forms[0].addEventListener("submit",(e)=>{
+            e.preventDefault();                             //to prevent from Re-loading
+            let username= document.getElementById("username").value
+            let password= document.getElementById("password").value
+
+            // console.log(username.value);   //using value attribute to print value
+            // console.log(password.value);
+
+            if(username==""){
+                document.getElementById("username").style.borderColor="red"
+                document.getElementById("err1").innerText="*Username is required"
+                document.getElementById("err1").style.color="red"
+            }
+
+            else if(password==""){
+                document.getElementById("password").style.borderColor="red"
+                document.getElementById("err2").innerText="*Password is required"
+                document.getElementById("err2").style.color="red"
+
+            }
+            else{
+                console.log("form submitted");  
+            }
+            
+            
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person={
+            name:"abc",
+            id:301,
+            sal:21000,
+            address:{
+                area:"punjagutta",
+                pincode:354127
+            }
+        }
+        console.log(person.address.area);
+ ////////////////////////////////////////////////////
+        person={
+            name:"john",
+            id:301,
+            sal:21000,
+            address: function(){
+                console.log(this.name+" area is punjagutta");   //here 'this' keyword will refer to current object
+            }
+        }
+       person.address();
+/////////////////////////////////////////////////////////
+        person={
+            name:"john",
+            id:301,
+            sal:21000,
+            address: ()=>{
+                console.log(this.name+" area is punjagutta");   //here we cannot us 'this' keyword in Arrow Function
+            }
+        }
+        person.address();
+
+        /////////////////////////////////////////////////
+
+        person={
+            name:"john",
+            id:301,
+            sal:21000,
+            address : { 
+                area:function(){
+                console.log(this.name+" area is punjagutta");   //here 'this' keyword will refer to current object since current object is address 
+                                                                //and there is no 'name '  in address object i.e. undefined
+            },
+            pincode:542154
+            }
+
+        }
+        console.log(person.address.area());
+        
+
+
+        
+        
+        
+    </script>
+</body>
+</html>

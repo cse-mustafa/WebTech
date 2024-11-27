@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="hide">Hide</button> <br>
+    <p id="para1" class="show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dicta saepe tempore nobis odit voluptatibus natus cum vero aliquid veritatis?</p>
+
+    <script>
+        let hide=document.getElementById("hide")
+        let para1=document.getElementById("para1")
+
+        hide.addEventListener("click",()=>{
+            if(hide.innerText=="hide"){
+                hide.innerText="show"
+                para1.style.display="none"
+            }
+            else{
+                hide.innerText="hide"
+                para1.style.display="inline-block"
+            }
+
+           
+        })
+    </script>
+    
+</body>
+</html>

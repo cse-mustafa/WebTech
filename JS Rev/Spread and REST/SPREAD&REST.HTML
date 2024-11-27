@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <SCRipt>
+
+        //SPREAD SPREAD
+        let arr1=[10,20];
+        let arr2=[30,40];
+        console.log(arr1.concat(arr2));
+
+
+        let arr3=[...arr1,arr2];          //Spread(...) will make the array spread all its elements in a new array
+        console.log(arr3);
+        arr3=[...arr1,...arr2];
+        console.log(arr3);
+        
+        function add(a,b){
+            console.log(a+b);
+            
+        }
+
+        //REST REST
+
+        add(10,20);  
+        add(10,20,30); //Here the add function will ignore extra arguments....We can use REST(...) parameters...it will store the remaining parameters
+
+        function add1(a,b,...c){
+            console.log(a+b);   //will execute with 2 parameters
+            console.log(c);   //remaining arguments will be stored here in 'c', in an array datastructure
+            
+            
+        }
+
+        add1(10,20,30,40,50,60)
+
+        
+        
+    </SCRipt>
+</body>
+</html>
