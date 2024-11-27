@@ -1,0 +1,27 @@
+p {
+    /* font-size: 50px; */
+    /* font-weight: bolder; */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-style: italic; */
+    /* font-style: oblique; */
+    /* font-variant: small-caps; */
+    color: orange;
+  }
+body{
+    background-image: url(https://th.bing.com/th?id=OIP.PeDNVBaobL7qAstwqDYwpwHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2);
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+/* background-repeat: repeat-y; */
+/* background-size: contain; */
+/* background-size: 100%; */
+/* background-size: cover; */
+/* background-size: 50%; */
+/* background-size: 10%; */
+/* background-position: top right; */
+/* background-position: bottom; */
+background-size: cover;
+/* background-attachment: fixed; */
+background-attachment: scroll;  
+
+
+}

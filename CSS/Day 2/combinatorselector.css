@@ -1,0 +1,10 @@
+/* div h1{background-color: red;} */
+/* descendant tag selects everyone */
+div>h1{background-color: aqua;}
+/* child selector will select only childer not grand children */
+div>section>h1{background-color: bisque;}
+/* using child selector two times to target grandchild */   
+div>h1+h1{background-color: blueviolet;}
+/* the + (adjacent sibling tag selects immediate siblings, if there is gap/other tags between siblings it wont be selected..eg..
+third child not selected but fourth is selected( because of adjacent sibling) */
+/* tilde operator will select all remaining h1s div>h1~h1(selected) */

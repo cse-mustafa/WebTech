@@ -1,0 +1,4 @@
+@import url(./import.css);
+h1{background-color: violet;border: 5px double red;}
+body{background-color: aqua;}
+#para{border: 5px solid;text-align: center ;background-color: bisque; text;}

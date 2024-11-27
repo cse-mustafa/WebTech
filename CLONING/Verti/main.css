@@ -1,0 +1,230 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    border: 0;
+    font-family: sans-serif,'Oleo Script', serif;
+}
+body{
+    background-image: url(./images/bg01.png);
+    /* background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url(images/bg01.png); */
+}
+#nav{
+    background-color: rgba(55, 61, 73, 0.975);
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    cursor: default;
+    height: 8vh;
+}
+#left{
+    align-items: start;
+}
+#left h1{
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 18px;
+    padding-left: 15px;
+}
+#left ul{
+    position: absolute;
+    top: 10px;
+    left: 73px;
+    display: flex;
+    /* justify-items: center; */
+    align-items: center;
+    list-style: none;
+    border: 1px solid white;
+    height:40px;
+    width: 350px;
+    border-radius: 3%;
+    /* padding: 30px; */
+}
+#left ul li{
+    padding-left: 20px;
+}
+#left ul li:hover{
+    cursor: pointer;
+}
+#right{
+    color: #fff;
+    border: 1px solid white;
+    width: 145px;
+    position: absolute;
+    top: 10px;
+    border-radius: 3%;
+    display: flex;
+    height:40px;
+    margin-left: 72%;
+    align-items: center;
+}
+#right button{
+    height: 15px;
+    background-color: blue;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 25px;
+}
+#right button:hover{
+    cursor: pointer;
+}
+#right button+button{
+    height: 15px;
+    background-color: black;
+    border-radius: 100%;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 25px;
+    width: 80px;
+    margin-right: 10px;
+}
+#right button+button:hover{
+    cursor: pointer;
+}
+#right1{
+    color: #fff;
+    border: 1px solid white;
+    width: 80px;
+    position: absolute;
+    top: 10px;
+    border-radius: 3%;
+    display: flex;
+    height:40px;
+    margin-left: 82%;
+    align-items: center;
+    padding-left: 20px;
+}
+#right1:hover{
+    cursor: pointer;
+    color: #e7746f;
+    border-color: #e7746f;
+}
+#right2{
+    background: #e7746f;
+    border-color: #e7746f;
+    width: 170px;
+    position: absolute;
+    top: 10px;
+    border-radius: 3%;
+    display: flex;
+    height:40px;
+    margin-left: 88%;
+    align-items: center;
+    padding-left: 10px;
+}
+/* .....................................NAV............NAV.......................NAV.................. */
+#logo{
+    margin-top: 8%;
+    margin-left: 10%;
+}
+
+
+#logo h1{
+    background: #ff4486;
+    color: #fff;
+    border-radius: 6px;
+    /* font-family: 'Oleo Script', serif; */
+    font-family: serif;
+    font-weight: 400;
+    /* padding: 13px 10.4px; */
+    font-size: 52px;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    vertical-align: middle;
+    height: 65px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#logo span{
+    color: #696969;
+    padding: 0px 0px 0px 18px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+/* .......................................................................................................................... */
+
+
+#mnav ul{
+    position: absolute;
+    top: 15.2%;
+    left: 40%;
+    width: 50%;
+    /* border: 2px solid rosybrown; */
+    display: flex;
+    height: 80px;
+    align-items: center;
+    list-style: none;
+    background: inherit;
+}  
+#mnav ul li{
+    padding: 0px 0px 0px 21.6px;
+}
+#mnav ul li span{
+    background-color: #444444;
+    color: #ffffff;
+    border-radius: 6%;
+    padding: 7.2px 14.4px;
+    font-weight: 800;
+}
+#mnav ul li span:hover{
+    cursor: pointer;
+}
+#mnav ul li label{
+    color: #696969;
+    font-weight: 800;
+    padding: 7.2px 14.4px;
+}
+#mnav ul li label:hover{
+    cursor: pointer;
+    background-color: #e7746f;
+}
+#banner{
+    background-color: white;
+    /* border: 2px solid red; */
+    height: 45vh;
+    margin: 7vh 21vh;
+    border-radius: 1%;
+    padding: 72px;
+}
+#banner h2{
+    font-size: 3.5em;
+    margin: 0.1em 0 0.35em 0;
+}
+#banner p{
+    font-size: 2.75em;
+    line-height: 1.35em;
+    color: #696969;
+}
+#banner button{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 41%;
+    left: 60%;
+    color: #ffffff;
+    background: #0090C5;
+    padding: 28.8px 32.4px;
+    border-radius: 2%;
+    width: 23%;
+    height: 12.5%;
+    font-size: 36px;
+    font-weight: bold;
+}
+#banner>button+button{
+    position: absolute;
+    top: 56%;
+    left: 60%;
+    color: #444444;
+    background: #0000000D;
+    font-size: 36px;
+    padding: 28.8px 32.4px 28.8px 0px ;
+    border-radius: 2%;
+    width: 23%;
+    font-weight: bold;
+}
+#banner button:hover{
+    cursor: pointer;
+    color: cyan;
+    /* background-color: darkblue; */
+}

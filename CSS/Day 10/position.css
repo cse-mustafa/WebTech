@@ -1,0 +1,35 @@
+#demo{
+  border:2px solid;
+  height: 250px;
+  width: 250px;
+  position: static;
+  top: 400px;
+  left: 400px;
+  /* Whenever we use Position:static .......top,right,bottom,left property wont work.....Its default property of browser*/
+ }
+ #demo1{
+    border:2px solid;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: 400px;
+  left: 400px;
+}
+#demo2{
+    border:2px solid;
+    height: 250px;
+    width: 250px;
+    position:absolute;
+    top: 5px;
+    left: 200px;
+    box-sizing: border-box;
+    padding: 125px 125px ;
+
+}
+#demo3{
+border:2px solid;
+height: 250px;
+width: 250px;
+position: absolute;
+top: 2px;
+}

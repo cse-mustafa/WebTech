@@ -1,0 +1,14 @@
+#demo{background-color: red;}
+#demo1{background-color: yellow;}
+/* id selector */
+.demo2{ border: 5px solid darkblue;}
+.demo3{text-align: center;background-color: red;}
+/* class selector */
+div{background-color: green;}
+/* element selector using tag name */
+#demo,#demo1,div{border: 2px solid salmon;}
+/* grouping selector */
+body{font-family: 'Times New Roman', Times, serif;background-color: aqua;}
+/* body .....part of universal selectors */
+*{background-color: violet;}
+/* asterik is universal selector */

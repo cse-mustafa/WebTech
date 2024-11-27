@@ -1,0 +1,49 @@
+/* h1:first-child{ 
+    background-color: red;
+} */
+ /* h1:last-child{
+    background-color: blue
+ } */
+ /* here it targets only h1 of div tag because it is a block level element
+ ...Last child doesnt work in Body(disadvantage)...hence we move to last of type */
+ /* h1:last-of-type{
+
+    background-color: brown;
+ }
+ h1:first-of-type{
+    background-color: aqua;
+ } */
+ /* last of and first of type checks 1st occurence from their respective directions(first to last ...last to first)
+ hence Having <P> tag we can still target h1  */
+
+ /* h1:nth-child(3){
+    background-color: yellow;
+ }
+/* with nth child we can target any child ...We can even pass 'even' and 'odd' in braces */
+/* h1:nth-child(even){
+    background-color: chocolate;
+} */ 
+ol{
+    border: 2px solid;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ol li:first-child{
+    border: 2px solid;
+    color: red;
+
+}
+ol li:last-child{
+    color: blue;
+    border: 2px solid;
+}
+ol li:nth-child(2){
+    color: cyan;
+    border: 2px solid;
+}
+ol li:nth-child(3){
+    color: blueviolet;
+    border: 2px solid;
+}

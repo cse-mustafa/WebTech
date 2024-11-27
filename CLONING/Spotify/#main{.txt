@@ -1,0 +1,255 @@
+#main{
+    /* border: 2px solid red; */
+    height: 88vh;
+    background-color: rgb(25, 230, 140);
+}
+#sub-main{
+    position: absolute;
+    left: 45%;
+    top: 25%;
+}
+#sub-main img{
+    height: 80px;
+}
+#sub-main img+img{
+    /* border: 2px solid; */
+    height: 33px;
+    position: absolute;
+    left: 38%;
+    top: 23%;
+}
+#sub-main img+img+img{
+    /* border: 2px solid; */
+    height: 9px;
+    position: absolute;
+    left: 46%;
+    top: 36%;
+}
+/* #downloadtag{
+    text-align: center;
+    border: 2px solid;
+    font-size: 40px;
+    font-weight: bold;
+    width: 350px;
+    margin-left: 38%;
+    position: absolute;
+    top: 320px;
+} */
+ #main h1{  
+    text-align:center;
+    font-size: 46px;
+    padding-top:235px; 
+    font-weight: 700;
+ }
+ #main p{
+    text-align: center;
+    font-weight: 545;
+    padding-top: 30px;
+    
+ }
+ #dark{
+    height: 104px;
+    margin-top: 40px;
+    margin-left: 618px;
+ }
+ #dark:hover{
+    cursor: pointer;
+    transform: translateY(-4px);
+ }
+ #main span{
+    position: absolute;
+    top: 600px;
+    left: 660px;
+ }
+ #main span a{
+    color:black ; 
+    font-size: 15px;  
+ }
+
+ /* ........................................................................................... */
+ 
+ #main1{
+    /* border: 2px solid; */
+    height: 40vh;
+ }
+ #main1 h3{
+    text-align: center;
+    padding-top: 70px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+ }
+ #main1 p{
+    text-align: center;
+    padding-top: 25px;
+ }
+ #main1>div{
+   position: absolute;
+   top: 900px; 
+   border: 2px solid;
+   margin-left: 530px;
+
+ }
+ #main1 div ol{
+    /* border: 2px solid; */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+ }
+ #main1 div img{
+    height: 57px;
+ }
+
+/* ................................................................................... */
+
+#main2{
+   height: 60vh;
+   border: 2px solid;
+   background-color: rgb(34, 35, 38);
+   align-items: center;
+   text-align: center;
+}
+#main2 img{
+   height: 185px;
+   margin-top: 65px;
+   margin-left: 30px;
+}
+#main2 h3{
+   color: #fff;
+   font-weight: 700;
+   font-size: 29px;
+   margin-top: 20px;
+}
+#main2 div{
+   /* border: 2px solid red; */
+   width: 65%;
+   background-color: inherit;
+   height: 30px;
+   text-align: center;
+   margin-top: 10px;
+   margin-left: 265px;
+   font-weight: 600;
+   padding-left: 15px;
+}
+#main2 div>span::after{
+   font-size: 22px;
+   content: "•";
+   margin-top: 8px;
+   padding-top: 4px;
+   padding-left: 14px;
+   padding-right: 14px;
+   color: rgb(29, 185, 84);
+}
+#main2 div span a{
+   color: rgb(29, 185, 84);
+}
+#sup{
+   color: rgb(29, 185, 84);
+}
+#main2 div a{
+   color: rgb(29, 185, 84);
+}
+.whitetext{
+   color: #fff;
+}
+/* ..................MAIN 4.............................. */
+#main4{
+   background-color: #000;
+   height: 73vh;
+}
+#main4 svg{
+   height: 2.5em;
+    margin-top: 17px;
+    fill: #fff;
+    margin-left: 200px;
+    margin-top: 80px;
+}
+#main4 ul{
+   list-style: none;
+}
+
+#main4 ul h2{
+   color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: .08em;
+}
+#main4 ul li{
+   padding-top: 8px;
+}
+.footwhite{
+   font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+ 
+}
+#main4 ul li span:hover{
+   cursor: pointer;
+   color: #1ed760;
+}
+#company{
+   margin-left: 400px;
+   position: absolute;
+   top: 1580px;
+}
+#community{
+   margin-left: 560px;
+   position: absolute;
+   top: 1580px;
+}
+#useful{
+   margin-left: 720px;
+   position: absolute;
+   top: 1580px; 
+}
+#spotify{
+   margin-left:880px;
+   position: absolute;
+   top: 1580px; 
+}
+#footwrap{
+   color: #919496;
+   list-style: none;
+   /* border: 2px solid green; */
+   height: 20px;
+   display: flex;
+   font-size: 10px;
+   width: 500px;
+   margin-top: 340px;  
+   margin-left: 170px;
+    
+}
+#footwrap span:hover{
+   cursor: pointer;
+   color: #1ed760;  
+}
+#footwrap span{
+   padding-left: 20px;
+}
+#br{
+   /* border: 2px solid #1ed760 ; */
+   width: 15px;
+   position: absolute;
+   top: 1820px;
+   right: 260px;
+}
+#br1{
+   color: #919496;
+   font-size: 10px;
+   position: absolute;
+   top: 1902px;
+   right: 175px;
+}
+#br1:hover{
+   cursor: pointer;
+   color: #1ed760;  
+}
+#br2{
+   color: #919496;
+   font-size: 12px;
+   position: absolute;
+   top: 1940px;
+   right: 175px;
+   padding-right: 2px;
+}

@@ -1,0 +1,46 @@
+/* p{ */
+   /* color: blue; */
+   /* text-transform: uppercase; */
+   /* text-transform: lowercase; */
+   /* text-transform: capitalize; */
+   /* text-decoration: overline; */
+   /* text-decoration: line-through; */
+   /* word-spacing: 50px; */
+   /* letter-spacing: 50px; */
+   /* text-shadow: 10px 10px 1px red; */
+
+/* } */
+h1{
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style:double;   
+}
+
+p{  color: blue;
+    border:2px solid;
+    width: 100px;
+    height: 20px;
+    /* overflow: visible;      */
+    /* default value of overflow */
+    overflow: hidden;
+    /* overflow: scroll; */
+    resize: horizontal;
+    /* resize: vertical; */
+    /* resize: both; */
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    /* text-overflow: clip; */
+    overflow-x: hidden;
+
+
+}
+body{
+
+    height: 2000px;
+    width: 2000px;
+    overflow-x: hidden;
+    /* overflow-y: hidden;               */
+    /* overflow is used for scrolling ,,when  cloning height increase is normal
+    but width should not be increased.....we will oftenly use overflow x to keep width as it is */
+}

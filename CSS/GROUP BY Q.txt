@@ -1,0 +1,30 @@
+SQL> SELECT ENAME,JOB from emp where ename LIKE '%A%';
+
+ENAME      JOB
+---------- ---------
+ALLEN      SALESMAN
+WARD       SALESMAN
+MARTIN     SALESMAN
+BLAKE      MANAGER
+CLARK      MANAGER
+ADAMS      CLERK
+JAMES      CLERK
+
+7 rows selected.
+
+SQL> 
+
+SQL> SELECT ENAME,JOB from emp where ename LIKE '%
+  2  A%' GROUP BY JOB;
+SELECT ENAME,JOB from emp where ename LIKE '%
+       *
+ERROR at line 1:
+ORA-00979: not a GROUP BY expression
+
+
+SQL> SELECT ENAME,JOB from emp where ename LIKE '%
+  2  A%' GROUP BY JOB,ENAME;
+
+no rows selected
+
+SQL> 

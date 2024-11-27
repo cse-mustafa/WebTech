@@ -1,0 +1,12 @@
+#head{background-color: aliceblue;} 
+/* id selector */
+.heads{background-color: aqua;}
+/* class selector */
+p,aside{background-color: blue;}
+/* group selector */
+*{background-color: yellowgreen;}
+/* universal selector, will select whole webpage */
+body{background-color: wheat;}
+/* also comes under universal selector,but its effect will show only in body */
+article{background-color: violet;}
+/* tag selector,,,,just write the name of the tags */

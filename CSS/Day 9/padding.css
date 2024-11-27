@@ -1,0 +1,16 @@
+div{
+width: 200px;
+height: 200px;
+border: 5px solid;
+padding-top: 50px;  
+padding-right: 50px;
+padding-bottom: 50px;
+padding-left: 50px;
+margin-top: 10px;
+margin-left: 200px;
+margin-right: 50px;
+margin-bottom: 50px;
+box-sizing: border-box;
+/* box sizing prevents increase in size of element with content */
+
+}

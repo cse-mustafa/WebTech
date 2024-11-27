@@ -1,0 +1,5 @@
+div h1{background-color: aqua;}
+div>span>h1{border: 2px solid;}
+/* adjacent sibling concentrates right after sibling */
+div+h1{background-color: blue;}
+div+h1+h1{background-color: blueviolet;}

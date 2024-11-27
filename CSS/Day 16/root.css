@@ -1,0 +1,29 @@
+:root{
+   --color-1:white;
+   --bg-color1:black;
+   --bg-color2:blue;
+   --text-size1:55px;
+   --text-size2:40px;
+}
+
+h1{
+    color: var(--color-1);
+    font-size: var(--text-size1);
+    background-color: var(--bg-color1);
+}
+
+h2{
+    color: var(--color-1);
+    font-size: var(--text-size1);
+    background-color: var(--bg-color2);
+}
+
+h3{
+    color: var(--bg-color2);
+    background-color: var(--bg-color1) !important;
+}
+
+/* by default "id" has higher priority but if we use "!important" it will give highest priority to the property where it is written */
+#demo{
+    background-color: aliceblue;
+}

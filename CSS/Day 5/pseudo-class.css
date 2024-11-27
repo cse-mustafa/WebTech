@@ -1,0 +1,61 @@
+a:link{
+    color: white;
+    background-color: black;
+}
+a:active{
+    color: white;
+    background-color: black;
+}
+a:visited{
+    color: crimson;
+    background-color: blue;
+}
+input:focus{
+    color: yellowgreen;
+    background-color: red;
+    height: 100px;
+    width: 200px;
+    caret-color: white;
+    /* Caret color is for cursor color */
+   
+    caret-shape: block;
+}
+/* using type to differentiate between different inputs */
+input[type='checkbox']:checked
+{
+
+    height: 50px;
+    width:50px;
+    accent-color: Green;
+    /* accent color is used to chnage bg color after selected */
+}
+input[type='radio']:checked
+{
+
+    height: 50px;
+    width:50px;
+    accent-color: Red;
+    /* accent color is used to chnage bg color after selected */
+}
+button:hover{
+    color: red;
+    background-color: black;
+    border-radius: 8px;
+    border: 5px solid red;
+    cursor: pointer;
+}
+div{
+    height: 500px;
+    width: 500px;
+    border: 5px solid;
+    background-color: red;
+
+}
+
+div:hover{
+    border-radius: 100%;
+    transition-duration: 5s;
+    transform: rotate(7770deg);
+    
+    
+}

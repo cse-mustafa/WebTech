@@ -1,0 +1,55 @@
+@import url(./section.css);
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    border: 0;
+    /* font-family: "PT Serif",Georgia,serif; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#nav{
+    height: 20vh;
+    border: 2px solid;
+    background-color: #fff;
+}
+#sub-nav{
+    /* border: 2px solid red; */
+    height: inherit;
+    margin: auto;
+    width: 70%;
+}
+#sub-nav span img{
+    max-height: 100px;
+    max-width: 400px;
+    margin-top: 17px;
+    fill: #fff;
+}
+#sub-nav div{
+border: 2px solid;
+width: 560px;
+display: flex;
+align-items: center;
+/* justify-items: flex-start; */
+/* word-spacing: 20px; */
+position: absolute;
+top: 8.5vh;
+left: 57%;
+}
+#sub-nav div span{
+    padding-left: 20px;
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #000;
+}
+#sub-nav div span:hover{
+    cursor: pointer;
+    color: #1ed760;
+}
+
+#wall1 img{
+    height: 100vh;
+    width: 100%;
+    /* position: fixed; */
+}
+

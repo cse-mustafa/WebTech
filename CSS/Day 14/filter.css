@@ -1,0 +1,17 @@
+img{
+    height: 400px;
+    width: 400px;
+}
+#demo{
+    /* filter: blur(5px); */
+/* filter: brightness(0.5); */
+/* filter: contrast(65%); */
+/* filter: drop-shadow(10px 15px 1px red); */
+/* filter:grayscale(65%) ; */
+/* filter: hue-rotate(157deg); */
+/* filter: invert(20%); */
+/* filter: opacity(50%); */
+/* filter: saturate(40%); */
+/* filter: sepia(40%); */
+/* filter: url(https://cdn.pixabay.com/photo/2017/07/31/17/12/water-2559064_1280.jpg); */
+}

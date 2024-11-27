@@ -1,0 +1,10 @@
+h1::first-letter{color: green;}
+p::first-line{font-style: italic;color: red;}
+h2::before{content: url(./e3bc67fade71917099c99fedf0faac54.jpg);}
+h2::after{content: url(./e3bc67fade71917099c99fedf0faac54.jpg);}
+/* li::marker{color: red;} */
+ol>li::marker{content: "😊";}
+ol>li+li::marker{content: "😂";}
+ol>li+li+li::marker{content: "😁";}
+p::selection{background-color: green;
+color: grey;}
